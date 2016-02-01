@@ -1,4 +1,4 @@
-package ar.edu.clientesTarjetaCredito
+package ar.edu.tarjetaCreditoDecoratorCucumber
 
 interface Cliente {
 

@@ -1,4 +1,4 @@
-package ar.edu.clientesTarjetaCredito
+package ar.edu.tarjetaCreditoDecoratorCucumber
 
 import cucumber.api.junit.Cucumber
 import org.junit.runner.RunWith

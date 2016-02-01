@@ -1,6 +1,6 @@
-package ar.edu.clientesTarjetaCredito
+package ar.edu.tarjetaCreditoDecoratorCucumber
 
-import ar.edu.clientesTarjetaCredito.exceptions.BusinessException
+import ar.edu.tarjetaCreditoDecoratorCucumber.exceptions.BusinessException
 import cucumber.api.java.en.And
 import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then

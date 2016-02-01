@@ -1,4 +1,4 @@
-package ar.edu.clientesTarjetaCredito
+package ar.edu.tarjetaCreditoDecoratorCucumber
 
 import org.eclipse.xtend.lib.annotations.Accessors
 
