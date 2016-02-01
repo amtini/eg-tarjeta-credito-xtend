@@ -1,6 +1,6 @@
-package ar.edu.clientesTarjetaCredito
+package ar.edu.tarjetaCreditoStrategies
 
-import ar.edu.clientesTarjetaCredito.CondicionComercial
+import ar.edu.tarjetaCreditoStrategies.CondicionComercial
 
 class Promocion implements CondicionComercial {
 	static int MONTO_MINIMO = 50
