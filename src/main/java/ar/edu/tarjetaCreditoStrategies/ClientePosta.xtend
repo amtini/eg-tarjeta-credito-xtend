@@ -43,7 +43,7 @@ class ClientePosta implements Cliente {
 	}
 	
 	def void agregarPromocion() {
-		condicionesComerciales.add(new Promocion)
+		this.agregarCondicionComercial(new Promocion)
 	}
 
 	/**
