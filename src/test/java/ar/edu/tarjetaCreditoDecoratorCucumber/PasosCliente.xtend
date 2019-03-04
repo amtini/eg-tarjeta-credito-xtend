@@ -60,24 +60,3 @@ class PasosCliente {
 	}
 
 }
-
-class ItemDeCompra {
-	int precio
-	String nombre
-	
-	/**
-	 * Construimos getters y setters a mano para no tener que cambiar el feature
-	 */
-	def getPrecio() {
-		precio
-	}
-	
-	def void setPrecio(int _precio) {
-		precio = _precio
-	}
-	
-	def void setNombre(String _nombre) {
-		nombre = _nombre
-	}
-}
-
