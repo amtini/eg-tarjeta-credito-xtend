@@ -34,8 +34,19 @@ class PasosCliente {
 	}
 
 	@When("^compra los siguientes items:")
-	def clienteCompraItems(List<ItemDeCompra> items) {
-		items.forEach [ unCliente.comprar(it.precio) ]
+	def clienteCompraItems(List<List<String>> items) {
+		items
+			.subList(1, items.length)
+			.forEach [ fields |
+				val cosa = fields.get(0)
+				val precioOriginal = fields.get(1)
+				try {
+					val precio = new Integer(precioOriginal)
+					unCliente.comprar(precio)
+				} catch (NumberFormatException e) {
+					throw new RuntimeException("Valor inválido para " + cosa + ": " + precioOriginal)
+				}
+			]
 	}
 	
 	@Then("^le queda (\\d+) de saldo")
